@@ -1,0 +1,196 @@
+[
+  {
+    "code": "01",
+    "name": "實證報告",
+    "note": "依規範完成有證據的報告",
+    "out": "報告",
+    "agents": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "need": "臨床問題、種子文獻、報告格式與有上傳授權的全文。",
+    "route": "01 → 02 → 03 → 人工檢索 → 05／06／07 → 08 → 09 → 10；04 視規範",
+    "slides": 49,
+    "notebook": "https://notebook.google.com/notebook/10459962-1ab4-4673-9790-0a969bb1b62b",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/01.html",
+    "deck": "slides/01.html"
+  },
+  {
+    "code": "02",
+    "name": "文獻讀書報告",
+    "note": "精讀、評讀與文獻分享",
+    "out": "報告",
+    "agents": [
+      "05",
+      "07",
+      "09",
+      "10",
+      "06",
+      "08"
+    ],
+    "need": "指定文獻全文、報告格式；多篇比較再加入資料萃取與統整。",
+    "route": "05 → 07 → 09 → 10；多篇比較加 06／08",
+    "slides": 38,
+    "notebook": "https://notebook.google.com/notebook/115f2c49-9e15-481a-b444-f9e78a56c6ba",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/02.html",
+    "deck": "slides/02.html"
+  },
+  {
+    "code": "03",
+    "name": "Journal Club",
+    "note": "研究結果與臨床討論",
+    "out": "簡報",
+    "agents": [
+      "01",
+      "05",
+      "07",
+      "08",
+      "09",
+      "10",
+      "06"
+    ],
+    "need": "指定全文、符合研究設計的評讀表、討論對象與目的。",
+    "route": "01 → 05 → 07 → 08 → 09 → 10；06 視數值需求",
+    "slides": 39,
+    "notebook": "https://notebook.google.com/notebook/72899688-17ab-4fea-90ba-dfae4cf7b9aa",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/03.html",
+    "deck": "slides/03.html"
+  },
+  {
+    "code": "04",
+    "name": "臨床晨會",
+    "note": "聚焦臨床問題與決策",
+    "out": "簡報",
+    "agents": [
+      "05",
+      "07",
+      "08",
+      "09",
+      "10",
+      "01",
+      "02",
+      "03"
+    ],
+    "need": "去識別化教學情境、合適證據與晨會目的。",
+    "route": "05 → 07 → 08 → 09 → 10；重建問題加 01／02／03",
+    "slides": 33,
+    "notebook": "https://notebook.google.com/notebook/396c0e9f-6234-4b7d-b27f-082fd9329422",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/04.html",
+    "deck": "slides/04.html"
+  },
+  {
+    "code": "05",
+    "name": "學術海報",
+    "note": "真實研究成果的視覺發表",
+    "out": "資訊圖表／簡報",
+    "agents": [
+      "06",
+      "08",
+      "09",
+      "10"
+    ],
+    "need": "真實研究目的、方法、結果、數據與海報規定。",
+    "route": "06／08 → 09 → 10 → Studio",
+    "slides": 32,
+    "notebook": "https://notebook.google.com/notebook/29621c86-be62-4dd3-b738-3d1475bbc0c2",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/05.html",
+    "deck": "slides/05.html"
+  },
+  {
+    "code": "06",
+    "name": "一頁式資訊圖表",
+    "note": "把經核實的重點圖像化",
+    "out": "資訊圖表",
+    "agents": [
+      "05",
+      "06",
+      "08",
+      "10"
+    ],
+    "need": "經核實的結論、原始來源、效果數字與受眾。",
+    "route": "05／06 → 08 → 10 → Studio",
+    "slides": 30,
+    "notebook": "https://notebook.google.com/notebook/ced2b214-0eeb-4a0d-8290-361374c82338",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/06.html",
+    "deck": "slides/06.html"
+  },
+  {
+    "code": "07",
+    "name": "系統性／範疇回顧",
+    "note": "正式檢索與人工篩選",
+    "out": "報告",
+    "agents": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "need": "研究問題、事前方法規劃、正式檢索、納排與篩選紀錄、納入全文。",
+    "route": "01／02／03 → 04（人工篩選）→ 05／06／07 → 08 → 09 → 10",
+    "slides": 60,
+    "notebook": "https://notebook.google.com/notebook/23ff5ffa-7953-4e14-a805-7171d77c8b18",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/07.html",
+    "deck": "slides/07.html"
+  },
+  {
+    "code": "08",
+    "name": "案例報告／QCC",
+    "note": "同一筆記本，依任務分流",
+    "out": "報告／簡報",
+    "agents": [
+      "C01",
+      "Q01",
+      "05",
+      "07",
+      "08",
+      "09",
+      "10"
+    ],
+    "need": "案例：去識別化個案時序與 CARE 規範。QCC：院內痛點、流程、基準資料及合適實證。",
+    "route": "案例：C01 → 05／07 → 09 → 10；QCC：Q01 → 05／07／08 → Q01 → 09 → 10",
+    "slides": 33,
+    "notebook": "https://notebook.google.com/notebook/de4a2927-6e28-4c85-b3ee-f2e0dd7688f3",
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/08.html",
+    "deck": "slides/08.html"
+  },
+  {
+    "code": "09",
+    "name": "自由探索研究",
+    "note": "從興趣與研究缺口開始",
+    "out": "通用",
+    "agents": [
+      "R00",
+      "01",
+      "02"
+    ],
+    "need": "研究興趣或種子文獻，以及清楚的研究目的。",
+    "route": "R00 → 01 → 02；後续助手依研究需求",
+    "slides": 40,
+    "notebook": null,
+    "verification": "來源及複製權限待驗證",
+    "guide": "guides/09.html",
+    "deck": "slides/09.html"
+  }
+]
