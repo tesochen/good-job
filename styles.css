@@ -122,3 +122,29 @@ body{background:#fff;text-rendering:optimizeLegibility}.simple-hero .hero-title{
 @keyframes goodWords{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
 .simple-hero .moment-cta{animation:noteShow .8s ease 6.8s forwards}
 @media(prefers-reduced-motion:reduce){.turning-page{display:none}.idea-bulb{animation:none;opacity:1;transform:none;filter:none}.brand-moment .moment-note,.brand-moment .moment-note.right{animation:none;opacity:1;translate:none}.simple-hero .moment-cta{animation:none;opacity:1}}
+
+/* v3 physical-book impression: paper curl, leaf thickness, moving light */
+.book-stage{perspective:1100px;transform-style:preserve-3d;isolation:isolate}
+.book-page-stack{position:absolute;left:50%;top:20%;width:40%;height:61%;border-radius:1px 11px 9px 2px;background:repeating-linear-gradient(to bottom,#f8f3e8 0px,#f8f3e8 1px,#c8bba8 1.7px,#fffdf6 2.4px);box-shadow:3px 3px 1px #a79d91,5px 5px 1px #c4b7a4,7px 7px 1px #e3d8c6,10px 11px 14px #28201d36;transform:skewY(-6deg);pointer-events:none}
+.book-page-stack.left-stack{left:10%;width:40%;transform:skewY(6deg);box-shadow:-2px 3px 1px #a79d91,-4px 5px 1px #c4b7a4,-6px 7px 1px #e3d8c6,-9px 11px 14px #28201d2b;opacity:0;animation:leftBookStack .3s ease 1.3s forwards}
+@keyframes leftBookStack{to{opacity:.95}}
+.turning-page{border:0;background:none;border-radius:0;box-shadow:none;transform-style:preserve-3d;backface-visibility:visible;overflow:visible;filter:drop-shadow(3px 4px 2px #302b2530);animation:physicalPageTurn .58s cubic-bezier(.42,.05,.18,.97) both}
+.page-face{position:absolute;inset:0;display:block;box-sizing:border-box;border:1px solid #b3a797;border-left:2px solid #6f665e;border-radius:1px 12px 10px 2px;background:linear-gradient(96deg,#b7a995 0%,#f3ebdd 6%,#fffefb 27%,#faf4e8 72%,#d2c5b1 100%);box-shadow:inset 5px 0 9px #6d5b4728,inset -6px 0 12px #6d5b473b,2px 2px 1px #a49886;backface-visibility:hidden}
+.page-face::after{content:"";position:absolute;inset:14% 13%;background:repeating-linear-gradient(to bottom,transparent 0 7px,#b9b1a48c 7.5px 8.2px,transparent 8.8px 14px);opacity:.7}
+.page-face.back{transform:rotateY(180deg);border-left:1px solid #b3a797;border-right:2px solid #746a5e;background:linear-gradient(95deg,#c3b39e,#fffdf7 25%,#f6ecdc 72%,#b8a58e)}
+.page-curl{position:absolute;inset:0;display:block;border-radius:0 13px 12px 0;background:linear-gradient(90deg,transparent 0%,#fffefa40 42%,#ffffffb8 58%,#6f584344 87%,#3f2c1a60 100%);transform:translateZ(2px) scaleX(.99);transform-origin:left;mix-blend-mode:multiply;pointer-events:none;animation:pageCurlShade .58s ease-in-out both}
+.leaf-1 .page-curl{animation-delay:0.80s}
+.leaf-2 .page-curl{animation-delay:1.11s}
+.leaf-3 .page-curl{animation-delay:1.42s}
+.leaf-4 .page-curl{animation-delay:1.73s}
+.leaf-5 .page-curl{animation-delay:2.04s}
+.leaf-6 .page-curl{animation-delay:2.35s}
+.leaf-7 .page-curl{animation-delay:2.66s}
+.leaf-8 .page-curl{animation-delay:2.97s}
+.leaf-9 .page-curl{animation-delay:3.28s}
+.leaf-10 .page-curl{animation-delay:3.59s}
+.leaf-11 .page-curl{animation-delay:3.90s}
+.leaf-12 .page-curl{animation-delay:4.21s}
+@keyframes physicalPageTurn{0%{opacity:0;transform:rotateY(0deg) skewY(-6deg) translateZ(2px)}5%{opacity:1}22%{transform:rotateY(-35deg) skewY(-9deg) rotateZ(-2deg) translateZ(7px)}48%{transform:rotateY(-88deg) skewY(-2deg) rotateZ(-3deg) translateZ(17px)}75%{transform:rotateY(-145deg) skewY(5deg) rotateZ(-1deg) translateZ(9px)}94%{opacity:1;transform:rotateY(-178deg) skewY(6deg) translateZ(2px)}100%{opacity:0;transform:rotateY(-180deg) skewY(6deg) translateZ(0)}}
+@keyframes pageCurlShade{0%,100%{opacity:.15;transform:translateZ(2px) scaleX(.98)}30%{opacity:.8;transform:translateZ(7px) scaleX(1.05)}55%{opacity:1;transform:translateZ(12px) scaleX(.9)}80%{opacity:.5;transform:translateZ(5px) scaleX(1.02)}}
+@media(prefers-reduced-motion:reduce){.book-page-stack.left-stack{animation:none;opacity:.95}.turning-page,.page-curl{display:none}}
