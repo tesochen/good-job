@@ -287,6 +287,10 @@ sup{font:500 .26em var(--mono);color:var(--acc);vertical-align:top;margin-left:.
 .cover h1{position:absolute;left:112px;top:270px;font:900 132px/1.12 var(--sans);letter-spacing:.01em}
 .cover .sub{position:absolute;left:120px;top:590px;font:400 34px/1.6 var(--sans);color:var(--soft)}
 .cover .foot{position:absolute;left:120px;right:120px;bottom:56px;display:flex;justify-content:space-between;font:500 20px/1 var(--mono);color:var(--mute)}
+.cover-source-links{position:absolute;left:120px;top:710px;display:flex;align-items:center;gap:22px;z-index:10}
+.cover-source-link{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:20px 30px;border:2px solid var(--acc);border-radius:14px;background:rgba(200,243,60,.1);color:var(--acc);font:700 29px/1.35 var(--sans);text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.cover-source-link:hover,.cover-source-link:focus-visible{background:rgba(200,243,60,.22);transform:translateY(-3px);outline:3px solid transparent}
+.cover-source-link span{font-size:26px}
 
 /* === CHAPTER DIVIDER === */
 .ch-num{position:absolute;right:110px;top:120px;font:500 420px/1 var(--mono);color:transparent;-webkit-text-stroke:2px #2B4346;letter-spacing:-.04em}
@@ -488,6 +492,10 @@ body.light .pbox{border-color:#13201F} body.light .pbox:not(.side):not(.final)::
 <div class="kicker reveal">&gt; 資料庫檢索 × Gemini Notebook × 來源型助手</div>
 <h1 class="reveal">Gemini Notebook<br/> 系統性／範疇回顧<sup>Good Job!</sup></h1>
 <div class="sub reveal">九大任務專屬教學 · 從來源到可查核成果</div>
+<div class="cover-source-links reveal" aria-label="課程來源連結">
+  <a class="cover-source-link" href="https://notebook.google.com/notebook/e7eda760-bc7c-41a1-b702-3e6186366615" target="_blank" rel="noopener noreferrer">Gemini Notebook 來源 <span aria-hidden="true">↗</span></a>
+  <a class="cover-source-link" href="https://drive.google.com/drive/folders/1C9trbhDvi7My6184_Wrk13tHvsGMXmwI" target="_blank" rel="noopener noreferrer">助手來源 <span aria-hidden="true">↗</span></a>
+</div>
 
 <div class="foot"><span>陳永祥 · 飛資得醫學資訊</span><span>01 / 60</span></div><aside class="notes">封面（封面）
 【時間】課程導入 1–5｜5 分鐘
